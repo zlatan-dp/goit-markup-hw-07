@@ -405,11 +405,7 @@ img {
 
 /* Секция клиетов */
 
-.clients-title {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
+.clients__title {
   margin-bottom: var(--second-margin);
 }
 
@@ -418,11 +414,11 @@ img {
   justify-content: center;
 }
 
-.clients-list-item + .clients-list-item {
+.clients-list__item + .clients-list__item {
   margin-left: var(--main-margin);
 }
 
-.clients-link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
@@ -437,19 +433,19 @@ img {
     filter var(--trans-dur) var(--trans-timing-function);
 }
 
-.clients-icon {
+.clients-list__icon {
   fill: currentColor;
   transition: filter var(--trans-dur) var(--trans-timing-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.clients-link:hover,
-.clients-link:focus .clients-icon {
+.clients-list__link:hover,
+.clients-list__link:focus .clients-list__icon {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -576,11 +572,6 @@ img {
 }
 
 .footer-logo {
-  font-family: 'Raleway', Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--white-color);
   display: block;
   margin-bottom: 20px;
@@ -590,11 +581,11 @@ img {
   width: 231px;
 }
 
-.footer-item:not(:last-child) {
+.adress-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-item-adress {
+.adress-list__adress {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -604,7 +595,7 @@ img {
   transition: color var(--trans-dur) var(--trans-timing-function);
 }
 
-.footer-item-link {
+.adress-list__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -614,38 +605,41 @@ img {
   transition: color var(--trans-dur) var(--trans-timing-function);
 }
 
-.footer-item-adress:hover,
-.footer-item-adress:focus,
-.footer-item-link:hover,
-.footer-item-link:focus {
+.adress-list__adress:hover,
+.adress-list__adress:focus,
+.adress-list__link:hover,
+.adress-list__link:focus {
   color: var(--accent-color);
 }
 
-.footer-soc {
+.footer-join {
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.footer-links {
+.join-list {
   display: flex;
 }
 
-.footer-soc-item + .footer-soc-item {
+.join-list__item + .join-list__item {
   margin-left: 10px;
 }
 
-.footer-action {
+.action {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--white-color);
+}
+
+.footer-join__action,
+.subscribe-modal__action {
   margin-bottom: 20px;
 }
 
-.footer-soc-link {
+.join-list__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -657,26 +651,26 @@ img {
   transition: background-color var(--trans-dur) var(--trans-timing-function);
 }
 
-.footer-icon {
+.join-list__icon {
   fill: var(--white-color);
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.join-list__link:hover,
+.join-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-modal {
+.subscribe-modal {
   margin-left: 93px;
   padding-top: 12px;
 }
 
-.action-input-wrap {
+.subscribe-form__wrap {
   display: flex;
   align-items: center;
 }
 
-.action-input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   color: var(--white-color);
@@ -690,21 +684,11 @@ img {
   padding-left: 16px;
 }
 
-.action-input::placeholder {
+.subscribe-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.action-btn {
-  background-color: var(--accent-color);
-  border-radius: 4px;
-  border-style: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+.subscribe-form__btn {
   color: var(--white-color);
   cursor: pointer;
 
@@ -714,12 +698,12 @@ img {
   margin-left: 12px;
 }
 
-.action-btn:hover,
-.action-btn:focus {
+.subscribe-form__btn:hover,
+.subscribe-form__btn:focus {
   background-color: #188ce8;
 }
 
-.action-input-icon {
+.subscribe-form__icon {
   margin-left: 10px;
 }
 
