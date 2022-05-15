@@ -15,11 +15,8 @@
 
 .hero__title {
   width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
+  @include fonts(900, 44px, 1.36, 0.06em);
+
   text-transform: uppercase;
   color: var(--white-color);
   margin-left: auto;
@@ -28,13 +25,5 @@
 }
 
 .hero__btn {
-  color: var(--white-color);
   padding: 10px 32px;
-
-  transition: background-color var(--trans-dur) var(--trans-timing-function);
-}
-
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: #188ce8;
 }

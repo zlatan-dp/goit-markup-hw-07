@@ -11,7 +11,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +25,7 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a lang="en" href="./index.html" class="logo header__logo link"
+          <a lang="en" href="./index.html" class="logo logo--black link"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <ul class="menu-list list">
@@ -81,8 +80,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__titles">Внимание к деталям</h3>
-              <p class="features__text">
+              <h3 class="features-list__titles">Внимание к деталям</h3>
+              <p class="features-list__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
@@ -92,8 +91,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__titles">Пунктуальность</h3>
-              <p class="features__text">
+              <h3 class="features-list__titles">Пунктуальность</h3>
+              <p class="features-list__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
@@ -103,8 +102,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__titles">Планирование</h3>
-              <p class="features__text">
+              <h3 class="features-list__titles">Планирование</h3>
+              <p class="features-list__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
@@ -114,8 +113,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__titles">Современные технологии</h3>
-              <p class="features__text">
+              <h3 class="features-list__titles">Современные технологии</h3>
+              <p class="features-list__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -355,21 +354,27 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-contacts">
-          <a lang="en" href="./index.html" class="logo footer-logo link">
+          <a lang="en" href="./index.html" class="logo logo--white link">
             <span class="logo__accent">Web</span>Studio</a
           >
           <address class="adress">
             <ul class="adress-list list">
               <li class="adress-list__item">
-                <a href="" class="adress-list__adress link">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="" class="adress-list__link adress-list__link--white link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="adress-list__item">
-                <a href="mailto:info@example.com" class="adress-list__link link"
+                <a
+                  href="mailto:info@example.com"
+                  class="adress-list__link adress-list__link--grey link"
                   >info@example.com</a
                 >
               </li>
               <li class="adress-list__item">
-                <a href="tel:+380991111111" class="adress-list__link link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="adress-list__link adress-list__link--grey link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -490,7 +495,7 @@
               ></label
             >
           </div>
-          <button type="submit" class="modal-btn">Отправить</button>
+          <button type="submit" class="btn modal-btn">Отправить</button>
         </form>
       </div>
     </div>

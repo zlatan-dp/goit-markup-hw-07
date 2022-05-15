@@ -13,11 +13,8 @@
   border-style: none;
   border-radius: 4px;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include fonts(500, 16px, 1.62);
+
   cursor: pointer;
   color: var(--main-color);
   padding: 6px 22px;
@@ -25,13 +22,12 @@
   transition: background-color var(--trans-dur) var(--trans-timing-function),
     color var(--trans-dur) var(--trans-timing-function),
     box-shadow var(--trans-dur) var(--trans-timing-function);
-}
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .portfolio-examples-list {
@@ -49,12 +45,11 @@
 .portfolio-link {
   display: block;
   transition: box-shadow var(--trans-dur) var(--trans-timing-function);
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .examples-wrapper {
@@ -90,17 +85,13 @@
 
 .portfolio-examples-name {
   margin-bottom: 4px;
+  @include fonts(700, 18px, 2, 0.06em, null);
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
   color: var(--main-color);
 }
 
 .portfolio-examples-type {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include fonts(null, 16px, 1.88, 0.03em, null);
+
   color: var(--second-color);
 }

@@ -24,19 +24,14 @@
 }
 
 .team-list__names {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include fonts(500, 16px, 1.19);
+
   margin-top: var(--main-margin);
 }
 
 .team-list__function {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include fonts(null, 16px, 1.19);
+
   color: var(--second-color);
   margin-top: 10px;
 }
@@ -63,14 +58,13 @@
 
   transition: background-color var(--trans-dur) var(--trans-timing-function),
     color var(--trans-dur) var(--trans-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
 }
 
 .soc-list__icon {
   fill: currentColor;
-}
-
-.soc-list__link:hover,
-.soc-list__link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
 }

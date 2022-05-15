@@ -3,14 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-flex {
   display: flex;
-}
-
-.footer-logo {
-  color: var(--white-color);
-  display: block;
-  margin-bottom: 20px;
 }
 
 .footer-contacts {
@@ -21,31 +16,21 @@
   margin-bottom: 9px;
 }
 
-.adress-list__adress {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-
-  transition: color var(--trans-dur) var(--trans-timing-function);
-}
-
 .adress-list__link {
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  @include fonts(null, 14px, 1.71, 0.03em, null);
 
   transition: color var(--trans-dur) var(--trans-timing-function);
-}
-
-.adress-list__adress:hover,
-.adress-list__adress:focus,
-.adress-list__link:hover,
-.adress-list__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--white {
+    color: var(--white-color);
+  }
+  &--grey {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-join {
@@ -62,10 +47,8 @@
 }
 
 .action {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em, null);
+
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -85,15 +68,15 @@
   align-items: center;
 
   transition: background-color var(--trans-dur) var(--trans-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .join-list__icon {
   fill: var(--white-color);
-}
-
-.join-list__link:hover,
-.join-list__link:focus {
-  background-color: var(--accent-color);
 }
 
 .subscribe-modal {
@@ -118,25 +101,17 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
-}
 
-.subscribe-form__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe-form__btn {
-  color: var(--white-color);
-  cursor: pointer;
-
   display: inline-flex;
   align-items: center;
   padding: 10px 28px;
   margin-left: 12px;
-}
-
-.subscribe-form__btn:hover,
-.subscribe-form__btn:focus {
-  background-color: #188ce8;
 }
 
 .subscribe-form__icon {
